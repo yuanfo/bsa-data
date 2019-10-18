@@ -44,24 +44,19 @@
         
         .kesong-jisong {
             font-size: 1em;
-            text-align: center;
+            text-align: left;
             font-family: '华文细黑';
         }
         
         .kesong-jisong span {
-            width: 12rem;
             display: inline-block;
-            text-align: center;
         }
         
         .kesong-zangyin {
-            font-size: 1rem;
             font-family: '楷体';
-            text-align: center;
         }
         
         .kesong-hanyi {
-            font-size: 1rem;
             font-family: '华文细黑';
         }
         
@@ -84,9 +79,6 @@
         }
         
         @media screen and (max-width: 600px) {
-            .kesong-jisong span {
-                width: 47%;
-            }
             .kesong-text {
                 width: 100%;
             }
@@ -95,14 +87,14 @@
         @media screen and (max-width: 350px) {
             p>span.kesong-zangyin {
                 margin-left: 5%;
-                width: 47%;
+                width: 48%;
             }
             p>span.kesong-hanyi {
-                width: 48%;
+                width: 47%;
             }
         }
         
-        @media screen and (min-width: 351px) {
+        @media screen and (min-width: 351px) and (max-width: 600px) {
             p>span.kesong-zangyin {
                 margin-left: 1%;
                 width: 50%;
@@ -117,7 +109,7 @@
             margin-bottom: 0.5em;
         }
         
-        br {
+        .kesong-jisong br {
             line-height: 0.3em;
         }
     </style>
