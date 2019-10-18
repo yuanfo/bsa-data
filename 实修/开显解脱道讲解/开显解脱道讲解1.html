@@ -1,147 +1,122 @@
 <html>
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        .title {
-            max-width: 100%;
-            margin: auto;
-            text-align: center;
-            font-size: 1.3em;
-            font-family: '黑体';
-            font-weight: bold;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            line-height: 2.5em;
-            padding-top: 1.5em;
-        }
-        
-        .subtitle {
-            max-width: 100%;
-            margin: auto;
-            font-size: 1em;
-            text-align: left;
-            font-family: '黑体';
-            font-weight: bold;
-        }
-        
-        .author {
-            max-width: 100%;
-            margin: auto;
-            font-size: 1em;
-            text-align: center;
-            font-family: '华文细黑';
-        }
-        
-        .sikaoti {
-            max-width: 100%;
-            margin: auto;
-            font-size: 1em;
-            text-align: left;
-            font-family: '黑体';
-            font-weight: bold;
-        }
-        
-        .dingli {
-            max-width: 100%;
-            margin: auto;
-        }
-        
-        .dingli-text {
-            font-size: 1em;
-            text-align: left;
-            font-family: '华文细黑';
-        }
-        
-        .dingli-jisong {
-            font-size: 1em;
-            text-align: center;
-            font-family: '华文细黑';
-        }
-        
-        .dingli-jisong span {
-            width: 9.5rem;
-            display: inline-block;
-            text-align: left;
-        }
-        
-        .dingli-zangyin {
-            font-size: 1em;
-            font-family: '宋体';
-        }
-        
-        .dingli-hanyi {
-            font-size: 1em;
-            font-family: '华文细黑';
-        }
-        
-        .dingli-note {
-            font-size: 1em;
-            font-style: italic;
-            color: grey;
-            text-align: left;
-            font-family: '华文细黑';
-        }
-        
-        .jisong {
-            max-width: 100%;
-            margin: auto;
-            font-size: 1em;
-            text-align: center;
-            font-family: '华文细黑';
-        }
-        
-        .yuanwen-jisong {
-            max-width: 100%;
-            margin: auto;
-            font-size: 1em;
-            text-align: center;
-            font-family: '华文细黑';
-            font-weight: bold;
-        }
-        
-        .yuanwen-text {
-            max-width: 100%;
-            margin: auto;
-            font-size: 1em;
-            font-family: '华文细黑';
-            font-weight: bold;
-        }
-        
-        .yuanwen-note {
-            font-size: 1em;
-            color: grey;
-            text-align: left;
-            font-family: '华文细黑';
-        }
-        
-        .text {
-            max-width: 100%;
-            margin: auto;
-            font-size: 1em;
-            text-align: left;
-            font-family: '华文细黑';
-        }
-        
-        .note {
-            max-width: 100%;
-            margin: auto;
-            font-size: 1em;
-            text-align: right;
-            font-family: '华文细黑';
-        }
-        
-        .dingli-jisong>p {
-            margin-block-start: 0.5em;
-            margin-block-end: 0.5em;
-        }
-        
-        br {
-            line-height: 0.1em;
-        }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+    .title {
+        max-width: 100%;
+        margin: auto;    
+        text-align: center;
+        font-size:1.3em; 
+        font-family: '黑体'; 
+        font-weight: bold; 
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height:2.5em;
+        padding-top: 1.5em;
+    }
+    .subtitle {
+        max-width: 100%;
+        margin: auto;        
+        font-size:1em;
+        text-align: left;
+        font-family: '黑体'; 
+        font-weight: bold; 
+    }
+    .author {
+        max-width: 100%;
+        margin: auto;    
+        font-size:1em; 
+        text-align: center;
+        font-family: '华文细黑';
+    }
+    .sikaoti {
+        max-width: 100%;
+        margin: auto;        
+        font-size:1em;
+        text-align: left;
+        font-family: '黑体'; 
+        font-weight: bold; 
+    }
+    .dingli {
+        max-width: 70%;
+        margin: auto;    
+        border: groove;    
+    }
+    .dingli-text {
+        font-size:1em;
+        text-align: left;
+        font-family: '华文细黑';
+    }
+    .dingli-jisong {
+        font-size:1em; 
+        text-align: center;
+        font-family: '华文细黑';
+    }
+    .dingli-jisong span {
+        width:9.5rem;
+        display: inline-block;
+        text-align: left;
+    }
+    .dingli-zangyin {
+        font-size:1em; 
+        font-family: '宋体';
+    }
+    .dingli-hanyi {
+        font-size:1em; 
+        font-family: '华文细黑';
+    }
+    .dingli-note {
+        font-size:1em;
+        font-style: italic;
+        color: grey;
+        text-align: left;
+        font-family: '华文细黑';
+    }
+    .jisong {
+        max-width: 100%;
+        margin: auto;       
+        font-size:1em; 
+        text-align: center;
+        font-family: '华文细黑';
+    }
+    .yuanwen-jisong {
+        max-width: 100%;
+        margin: auto;       
+        font-size:1em; 
+        text-align: center;
+        font-family: '华文细黑';
+        font-weight: bold;
+    }
+    .yuanwen-text {
+        max-width: 100%;
+        margin: auto;       
+        font-size:1em; 
+        font-family: '华文细黑';
+        font-weight: bold;
+    }
+    .yuanwen-note {
+        font-size:1em;
+        font-style: italic;
+        color: grey;
+        text-align: left;
+        font-family: '华文细黑';
+    }
+    .text {
+        max-width: 100%;
+        margin: auto;       
+        font-size:1em; 
+        text-align: left;
+        font-family: '华文细黑';
+    }
+    .note {
+        max-width: 100%;
+        margin: auto;      
+        font-size:1em;  
+        text-align: right;
+        font-family: '华文细黑';
+    }
+</style>
 </head>
-
 <body>
     <div class="title">
         <p>
@@ -253,7 +228,7 @@
         <p>从整个藏传佛教来讲，麦彭仁波切上知天文下知地理，既通达出世间的显密佛法，也精通世间的医学、历算学、声明学等大小十明，是真正的全知，所以我个人对他的信心非常大。相比之下，我们即生当中再怎么努力，可能也无法企及麦彭仁波切智慧的千分之一、万分之一。</p>
         <p>由于麦彭仁波切对法王如意宝有一种特殊的近传加持，凡是麦彭仁波切传下来的法，对法王传承的每个弟子都有一种不可思议的力量。不说别的，就看麦彭仁波切造的《大自在祈祷文》，现在全世界每天那么多人在念诵，这在世间是一种多大的威力，大家应该清楚。</p>
         <p>当然，一位上师在弘法利生方面不共的威力，凡夫人从表面上不一定看得出来，但他确实有一种我们看不见、摸不到的无形力量，这种力量可以形容为特殊的加持力和发心力。</p>
-        <p>所以，你们修加行就用麦彭仁波切造的《开显解脱道》，念藏文或汉文都可以。这样修的话，一定会有一种强力的加持植入你的心相续当中，让你自然而然变成一个真正的修行人。</p>
+        <p>所以，你们修加行就用麦彭仁波切造的《开显解脱道》，念藏文或汉文都可以。这样修的话，一定会有一种强力的加持植入你的心相续当中，让你自然而然变成一个真正的修行人。</p> 
     </div>
     <div class="title">
         <p>共同外前行</p>
@@ -330,7 +305,7 @@
         <p>无义虚度我等众</p>
     </div>
     <div class="text">
-        <p>但确实有很多人在虚度光阴，所作所为无有任何实义，甚至天天做一些非法的事情，不好好闻思修行，也不好好做对众生和自己有利的事情。看到城市里面的很多人，我经常会自言自语：“哎呦，世间人好可怜啊！他们中的大多数都非常地迷茫，虽然整天忙忙碌碌，但最终还是在轮回当中漂泊，真是特别特别可怜。”</p>
+         <p>但确实有很多人在虚度光阴，所作所为无有任何实义，甚至天天做一些非法的事情，不好好闻思修行，也不好好做对众生和自己有利的事情。看到城市里面的很多人，我经常会自言自语：“哎呦，世间人好可怜啊！他们中的大多数都非常地迷茫，虽然整天忙忙碌碌，但最终还是在轮回当中漂泊，真是特别特别可怜。”</p>
     </div>
     <div class="yuanwen-jisong">
         <p>请集三宝师悲视</p>
@@ -495,7 +470,7 @@
     </div>
     <div class="text">
         <p>轮回是什么样的？它具有各种难忍的痛苦。地狱有寒热的痛苦；饿鬼有饥渴的痛苦；旁生有被役使的痛苦；人类有苦苦、变苦、行苦以及生老病死等痛苦；阿修罗有嫉妒斗争之苦；天人有死堕之苦，诸如此类。六道众生都被各自的痛苦所折磨，毎种痛苦都是非常难以忍受的。</p>
-
+        
     </div>
     <div class="yuanwen-jisong">
         <p>现乐变化欺惑心</p>
@@ -542,5 +517,5 @@
         <p>今天，主要讲了共同加行的重要性。很多人修得还是不错。那天我看了大家的学修记录表，学会当中确实有很多道友在特别认真地修加行，这一点我很随喜。但是大家还要加倍努力，前行法门千万千万不能轻视，一定要重视！一定要知道加行法门的重要性、必要性，以及它的功徳和力量。这样的话，我们的修学一定会非常圆满！</p>
     </div>
 </body>
-
 </html>
+
