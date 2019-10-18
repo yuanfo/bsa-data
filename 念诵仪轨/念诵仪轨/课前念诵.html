@@ -1,136 +1,96 @@
 <html>
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        .title {
-            max-width: 100%;
-            margin: auto;
-            text-align: center;
-            font-size: 1.3em;
-            font-family: '黑体';
-            font-weight: bold;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            line-height: 2.5em;
-            padding-top: 1.5em;
-        }
-        
-        .subtitle {
-            max-width: 100%;
-            margin: auto;
-            font-size: 1em;
-            text-align: left;
-            font-family: '黑体';
-            font-weight: bold;
-        }
-        
-        .author {
-            max-width: 100%;
-            margin: auto;
-            font-size: 0.88em;
-            text-align: center;
-            font-family: '华文细黑';
-        }
-        
-        .note {
-            max-width: 100%;
-            margin: auto;
-            font-size: 0.7em;
-            color: grey;
-            text-align: right;
-            font-family: '华文细黑';
-        }
-        
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+    .title {
+        max-width: 100%;
+        margin: auto;    
+        text-align: center;
+        font-size:1.3em; 
+        font-family: '黑体'; 
+        font-weight: bold; 
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height:2.5em;
+        padding-top: 1.5em;
+    }
+    .subtitle {
+        max-width: 100%;
+        margin: auto;        
+        font-size:1em;
+        text-align: left;
+        font-family: '黑体'; 
+        font-weight: bold; 
+    }
+    .author {
+        max-width: 100%;
+        margin: auto;    
+        font-size:1em; 
+        text-align: center;
+        font-family: '华文细黑';
+    }
+    .kesong-jisong {
+        font-size:1em; 
+        text-align: center;
+        font-family: '华文细黑';
+    }
+    .kesong-jisong span {
+        width:12rem;
+        display: inline-block;
+        text-align: center;
+    }
+    .kesong-zangyin {
+        font-size:1em; 
+        font-family: '宋体';
+    }
+    .kesong-hanyi {
+        font-size:1em; 
+        font-family: '华文细黑';
+    }
+    .kesong-note {
+        font-size:1em;
+        font-style: italic;
+        color: grey;
+        text-align: left;
+        font-family: '华文细黑';
+    }
+    .kesong-text {
+        font-size:1em; 
+        text-align: left;
+        font-family: '华文细黑';
+    }
+    
+    @media screen and (max-width: 400px) {
         .kesong-jisong {
-            font-size: 1em;
-            text-align: center;
-            font-family: '华文细黑';
+            font-size:0.8em;
         }
-        
         .kesong-jisong span {
-            width: 12rem;
-            display: inline-block;
-            text-align: center;
+            width:9.5rem;
         }
-        
         .kesong-zangyin {
-            font-size: 1rem;
-            font-family: '楷体';
+            font-size:0.8em;
         }
-        
         .kesong-hanyi {
-            font-size: 1rem;
-            font-family: '华文细黑';
+            font-size:0.8em;
         }
-        
         .kesong-note {
-            font-size: 0.88em;
-            color: grey;
-            text-align: left;
-            font-family: '华文细黑';
+            font-size:0.8em;
         }
-        
         .kesong-text {
-            text-align: left;
-            font-family: '楷体';
+            font-size:0.8em; 
         }
-        
-        .kesong-htext {
-            text-align: left;
-            font-family: '华文细黑';
-            width: 100%;
-        }
-        
-        @media screen and (max-width: 600px) {
-            .kesong-jisong span {
-                width: 47%;
-            }
-            .kesong-text {
-                width: 100%;
-            }
-        }
-        
-        @media screen and (max-width: 350px) {
-            p>span.kesong-zangyin {
-                margin-left: 5%;
-                width: 47%;
-            }
-            p>span.kesong-hanyi {
-                width: 48%;
-            }
-        }
-        
-        @media screen and (min-width: 351px) {
-            p>span.kesong-zangyin {
-                margin-left: 1%;
-                width: 50%;
-            }
-            p>span.kesong-hanyi {
-                width: 49%;
-            }
-        }
-        
-        .kesong-jisong p {
-            margin-top: 0.5em;
-            margin-bottom: 0.5em;
-        }
-        
-        br {
-            line-height: 0.3em;
-        }
-    </style>
+    }
+</style>
 </head>
-
 <body>
-    <div class="title">
-        <p>
+	<div class="title">
+		<p>
             课前念诵
-        </p>
-    </div>
+		</p>
+	</div>
     <div class="kesong-jisong">
         <p class="kesong-note">加倍咒</p>
-        <p class="kesong-text">嗡桑巴Ra桑巴Ra 波玛纳萨Ra 玛哈臧巴巴吽啪德娑哈</p>
+        <p><span class="kesong-zangyin">嗡桑巴Ra桑巴Ra 波玛纳萨Ra 玛哈臧巴巴吽啪德娑哈</p>
     </div>
     <br>
 
@@ -200,8 +160,9 @@
 
     <div class="kesong-jisong">
         <p class="kesong-note">供云咒</p>
-        <p class="kesong-text">纳摩Ra纳扎雅雅 纳摩巴嘎哇得 班匝<sub>儿</sub>萨Ra扎玛<sub>儿</sub>达呢 达塔嘎达雅 阿<sub>儿</sub>哈得 桑雅桑波达雅 达雅塔 嗡班贼<sub>儿</sub>班贼<sub>儿</sub>玛哈班贼<sub>儿</sub> 玛哈得匝班贼<sub>儿</sub> 玛哈波雅班贼
-            <sub>儿</sub> 玛哈波德泽达班贼<sub>儿</sub> 玛哈波德曼卓巴桑札玛纳班贼<sub>儿</sub> 萨<sub>儿</sub>瓦嘎<sub>儿</sub>玛 阿瓦Ra纳 波效达纳 班贼<sub>儿</sub>娑哈</p>
+        <p class="kesong-zangyin">纳摩Ra纳扎雅雅 纳摩巴嘎哇得 班匝<sub>儿</sub>萨Ra扎玛<sub>儿</sub>达呢 达塔嘎达雅 阿<sub>儿</sub>哈得
+    桑雅桑波达雅 达雅塔 嗡班贼<sub>儿</sub>班贼<sub>儿</sub>玛哈班贼<sub>儿</sub> 玛哈得匝班贼<sub>儿</sub>
+玛哈波雅班贼<sub>儿</sub> 玛哈波德泽达班贼<sub>儿</sub> 玛哈波德曼卓巴桑札玛纳班贼<sub>儿</sub> 萨<sub>儿</sub>瓦嘎<sub>儿</sub>玛 阿瓦Ra纳 波效达纳 班贼<sub>儿</sub>娑哈</p>
     </div>
     <br>
 
@@ -365,26 +326,32 @@
         <p><span class="kesong-zangyin">得东所所多波耶希格</span><span class="kesong-hanyi">乐空圣妙观察智慧身</span></p>
         <p><span class="kesong-zangyin">玛恰得丹巴咪让银类</span><span class="kesong-hanyi">离欲具乐莲花自性中</span></p>
         <p><span class="kesong-zangyin">多杰涅玛囊瓦钦布华</span><span class="kesong-hanyi">金刚日大光明之胜德</span></p>
+        <br>
         <p><span class="kesong-zangyin">秋格囊瓦塔耶多杰秋</span><span class="kesong-hanyi">法身无量光佛金刚法</span></p>
         <p><span class="kesong-zangyin">结定旺秀特杰吉恰惹</span><span class="kesong-hanyi">世间自在大悲为怀身</span></p>
         <p><span class="kesong-zangyin">巴玛嘉波括迪锕旺杰</span><span class="kesong-hanyi">驾御轮回涅槃莲花王</span></p>
         <p><span class="kesong-zangyin">囊哲惹伦旺钦嘿热嘎</span><span class="kesong-hanyi">胜伏现有雄威嘿热嘎</span></p>
+        <br>
         <p><span class="kesong-zangyin">桑瓦耶希班匝哇Ra合</span><span class="kesong-hanyi">秘密智母金刚亥母尊</span></p>
         <p><span class="kesong-zangyin">得窍多波嘉波得钦得</span><span class="kesong-hanyi">胜乐欲王以及大乐藏</span></p>
         <p><span class="kesong-zangyin">玛利洁给耶绰热学玛</span><span class="kesong-hanyi">怀摄一切众心作种母</span></p>
         <p><span class="kesong-zangyin">窍腾夏吉旺秀得东嘎</span><span class="kesong-hanyi">胜共手印自在乐空舞</span></p>
+        <br>
         <p><span class="kesong-zangyin">旺匝多杰华卧札给措</span><span class="kesong-hanyi">怀柔金刚勇士空行聚</span></p>
         <p><span class="kesong-zangyin">囊东年巴钦布昂涅德</span><span class="kesong-hanyi">现空广大平等自性中</span></p>
         <p><span class="kesong-zangyin">多杰格耶嘎基哲僧哟</span><span class="kesong-hanyi">金刚身之游舞撼三有</span></p>
         <p><span class="kesong-zangyin">嘎美颂格压这康僧各</span><span class="kesong-hanyi">无碍语之笑声召三界</span></p>
+        <br>
         <p><span class="kesong-zangyin">奥热玛布括迪永拉恰</span><span class="kesong-hanyi">红光周遍轮涅一切处</span></p>
         <p><span class="kesong-zangyin">哲伊当借哟样德巴学</span><span class="kesong-hanyi">撼动聚集有寂诸精华</span></p>
         <p><span class="kesong-zangyin">多杰恰巴钦布特基呢</span><span class="kesong-hanyi">依于金刚大贪之意乐</span></p>
         <p><span class="kesong-zangyin">南尼乌哲多给窍作样</span><span class="kesong-hanyi">赐予所欲二种胜悉地</span></p>
+        <br>
         <p><span class="kesong-zangyin">多杰加杰压巴钦波义</span><span class="kesong-hanyi">施以金刚铁钩大绢索</span></p>
         <p><span class="kesong-zangyin">囊哲得瓦钦波洞学巴</span><span class="kesong-hanyi">现有诸法摄于大乐中</span></p>
         <p><span class="kesong-zangyin">塔耶杰彻札沃若嘎坚</span><span class="kesong-hanyi">无边幻化网中游舞者</span></p>
         <p><span class="kesong-zangyin">德杰恭沃学瓦银犹波</span><span class="kesong-hanyi">犹如芝麻荚开而安住</span></p>
+        <br>
         <p><span class="kesong-zangyin">冉绛匝僧旺格拉措拉</span><span class="kesong-hanyi">怀柔圣众浩瀚三根本</span></p>
         <p><span class="kesong-zangyin">给贝所瓦得所辛基洛</span><span class="kesong-hanyi">至诚恭敬祈祷垂加持</span></p>
         <p><span class="kesong-zangyin">窍腾乌哲多给华塔达</span><span class="kesong-hanyi">一切所欲胜共诸悉地</span></p>
@@ -485,15 +452,26 @@
     <br>
 
     <div class="kesong-jisong">
-        <p class="kesong-text">灿玖巴当 荣迪波 锦吉 敦波 格类 耶希杰 奥热 纳措波 囊瓦钦布 达当 森坚坛加杰 哲巴坛加 萨样 塔巴钦布 蓝杰 云丹 策银德 吉得 谢 么多波 萨伦巴 三拉</p>
-        <p class="kesong-htext">观想依靠持诵名号、念诵陀罗尼咒之缘，从本师之身中，放射种种智慧大光芒，遣除我与一切众生之所有罪障，并如理生起大乘道功德，而后获得不退转果位。</p>
-
+        <p class="kesong-zangyin">灿玖巴当 荣迪波 锦吉</p>
+        <p class="kesong-hanyi">观想依靠持诵名号、念诵陀罗尼咒之缘，</p>
+        <br>
+        <p class="kesong-zangyin">敦波 格类 耶希杰 奥热 纳措波 囊瓦钦布</p>
+        <p class="kesong-hanyi">从本师之身中，放射种种智慧大光芒，</p>
+        <br>
+        <p class="kesong-zangyin">达当 森坚坛加杰 哲巴坛加 萨样</p>
+        <p class="kesong-hanyi">遣除我与一切众生之所有罪障，</p>
+        <br>
+        <p class="kesong-zangyin">塔巴钦布 蓝杰 云丹 策银德 吉得</p>
+        <p class="kesong-hanyi">并如理生起大乘道功德，</p>
+        <br>
+        <p class="kesong-zangyin">谢 么多波 萨伦巴 三拉/p>
+        <p class="kesong-hanyi">而后获得不退转果位。</p>
     </div>
     <br>
 
     <div class="kesong-jisong">
-        <p class="kesong-text">喇嘛敦巴 炯丹迪 得银夏巴 扎炯巴 样达巴 作波桑吉 华嘉瓦 夏迦 特巴拉 香擦洛 窍多 嘉森切奥</p>
-        <p class="kesong-htext">顶礼、供养、皈依、本师、出有坏、如来、应供、真实圆满正等觉释迦牟尼佛</p>
+        <p class="kesong-zangyin">喇嘛敦巴 炯丹迪 得银夏巴 扎炯巴 样达巴 作波桑吉 华嘉瓦 夏迦 特巴拉 香擦洛 窍多 嘉森切奥</p>
+        <p class="kesong-hanyi">顶礼、供养、皈依、本师、出有坏、如来、应供、真实圆满正等觉释迦牟尼佛</p>
     </div>
     <br>
 
@@ -514,7 +492,7 @@
 
     <div class="kesong-jisong">
         <p class="kesong-note">护法祈祷供养仪轨</p>
-        <p class="kesong-text">纳美萨<sub>儿</sub>瓦达塔嘎达、巴哟波效么康贝、萨<sub>儿</sub>瓦达康额嘎得、萨帕Ra纳额芒嘎嘎纳康娑哈</p>
+        <p class="kesong-zangyin">纳美萨<sub>儿</sub>瓦达塔嘎达、巴哟波效么康贝、萨<sub>儿</sub>瓦达康额嘎得、萨帕Ra纳额芒嘎嘎纳康娑哈</p>
     </div>
     <br>
 
@@ -636,5 +614,4 @@
         <p><span class="kesong-zangyin">洛珠博波囊瓦洁德所</span><span class="kesong-hanyi">愿赐智慧辩才咸显现</span></p>
     </div>
 </body>
-
 </html>
