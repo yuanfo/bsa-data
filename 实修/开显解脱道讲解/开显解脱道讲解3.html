@@ -1,129 +1,155 @@
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<style>
-    .title {
-        max-width: 100%;
-        margin: auto;    
-        text-align: center;
-        font-size:1.3em; 
-        font-family: '黑体'; 
-        font-weight: bold; 
-        margin-top: 0px;
-        margin-bottom: 0px;
-        line-height:2.5em;
-        padding-top: 1.5em;
-    }
-    .subtitle {
-        max-width: 100%;
-        margin: auto;        
-        font-size:1em;
-        text-align: left;
-        font-family: '黑体'; 
-        font-weight: bold; 
-    }
-    .author {
-        max-width: 100%;
-        margin: auto;    
-        font-size:1em; 
-        text-align: center;
-        font-family: '华文细黑';
-    }
-    .sikaoti {
-        max-width: 100%;
-        margin: auto;        
-        font-size:1em;
-        text-align: left;
-        font-family: '黑体'; 
-        font-weight: bold; 
-    }
-    .dingli {
-        max-width: 70%;
-        margin: auto;    
-        border: groove;    
-    }
-    .dingli-text {
-        font-size:1em;
-        text-align: left;
-        font-family: '华文细黑';
-    }
-    .dingli-jisong {
-        font-size:1em; 
-        text-align: center;
-        font-family: '华文细黑';
-    }
-    .dingli-jisong span {
-        width:9.5rem;
-        display: inline-block;
-        text-align: left;
-    }
-    .dingli-zangyin {
-        font-size:1em; 
-        font-family: '宋体';
-    }
-    .dingli-hanyi {
-        font-size:1em; 
-        font-family: '华文细黑';
-    }
-    .dingli-note {
-        font-size:1em;
-        font-style: italic;
-        color: grey;
-        text-align: left;
-        font-family: '华文细黑';
-    }
-    .jisong {
-        max-width: 100%;
-        margin: auto;       
-        font-size:1em; 
-        text-align: center;
-        font-family: '华文细黑';
-    }
-    .yuanwen-jisong {
-        max-width: 100%;
-        margin: auto;       
-        font-size:1em; 
-        text-align: center;
-        font-family: '华文细黑';
-        font-weight: bold;
-    }
-    .yuanwen-text {
-        max-width: 100%;
-        margin: auto;       
-        font-size:1em; 
-        font-family: '华文细黑';
-        font-weight: bold;
-    }
-    .yuanwen-note {
-        font-size:1em;
-        font-style: italic;
-        color: grey;
-        text-align: left;
-        font-family: '华文细黑';
-    }
-    .yuanwen-note {
-        font-size:1em;
-        font-style: italic;
-        color: grey;
-        text-align: left;
-        font-family: '华文细黑';
-    }
-    .text {
-        max-width: 100%;
-        margin: auto;       
-        font-size:1em; 
-        text-align: left;
-        font-family: '华文细黑';
-    }
-    .note {
-        max-width: 100%;
-        margin: auto;      
-        font-size:1em;  
-        text-align: right;
-        font-family: '华文细黑';
-    }
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .title {
+            max-width: 100%;
+            margin: auto;
+            text-align: center;
+            font-size: 1.3em;
+            font-family: '黑体';
+            font-weight: bold;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            line-height: 2.5em;
+            padding-top: 1.5em;
+        }
+        
+        .subtitle {
+            max-width: 100%;
+            margin: auto;
+            font-size: 1em;
+            text-align: left;
+            font-family: '黑体';
+            font-weight: bold;
+        }
+        
+        .author {
+            max-width: 100%;
+            margin: auto;
+            font-size: 1em;
+            text-align: center;
+            font-family: '华文细黑';
+        }
+        
+        .sikaoti {
+            max-width: 100%;
+            margin: auto;
+            font-size: 1em;
+            text-align: left;
+            font-family: '黑体';
+            font-weight: bold;
+        }
+        
+        .dingli {
+            max-width: 100%;
+            margin: auto;
+        }
+        
+        .dingli-text {
+            font-size: 1em;
+            text-align: left;
+            font-family: '华文细黑';
+        }
+        
+        .dingli-jisong {
+            font-size: 1em;
+            text-align: center;
+            font-family: '华文细黑';
+        }
+        
+        .dingli-jisong span {
+            width: 9.5rem;
+            display: inline-block;
+            text-align: left;
+        }
+        
+        .dingli-zangyin {
+            font-size: 1em;
+            font-family: '宋体';
+        }
+        
+        .dingli-hanyi {
+            font-size: 1em;
+            font-family: '华文细黑';
+        }
+        
+        .dingli-note {
+            font-size: 1em;
+            font-style: italic;
+            color: grey;
+            text-align: left;
+            font-family: '华文细黑';
+        }
+        
+        .jisong {
+            max-width: 100%;
+            margin: auto;
+            font-size: 1em;
+            text-align: center;
+            font-family: '华文细黑';
+        }
+        
+        .yuanwen-jisong {
+            max-width: 100%;
+            margin: auto;
+            font-size: 1em;
+            text-align: center;
+            font-family: '华文细黑';
+            font-weight: bold;
+        }
+        
+        .yuanwen-text {
+            max-width: 100%;
+            margin: auto;
+            font-size: 1em;
+            font-family: '华文细黑';
+            font-weight: bold;
+        }
+        
+        .yuanwen-note {
+            font-size: 1em;
+            font-style: italic;
+            color: grey;
+            text-align: left;
+            font-family: '华文细黑';
+        }
+        
+        .yuanwen-note {
+            font-size: 1em;
+            color: grey;
+            text-align: left;
+            font-family: '华文细黑';
+        }
+        
+        .text {
+            max-width: 100%;
+            margin: auto;
+            font-size: 1em;
+            text-align: left;
+            font-family: '华文细黑';
+        }
+        
+        .note {
+            max-width: 100%;
+            margin: auto;
+            font-size: 1em;
+            text-align: right;
+            font-family: '华文细黑';
+        }
+        
+        .dingli-jisong>p {
+            margin-block-start: 0.5em;
+            margin-block-end: 0.5em;
+        }
+        
+        br {
+            line-height: 0.1em;
+        }
+    </style>
 </head>
+
 <body>
     <div class="title">
         <p>
@@ -574,5 +600,5 @@
         <p>所以，修完加行，心相续一定会有变化，将来，密法中的很多深广道理，可以自由自在地行持。</p>
     </div>
 </body>
-</html>
 
+</html>
