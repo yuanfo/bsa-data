@@ -1,19 +1,14 @@
 import os, sys
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
-
 src_dir = sys.argv[1] if len(sys.argv) >= 2 else '../html'
-
 dirpath = os.getcwd()
 log_files = dirpath+"/result.txt"
 dirpath_for_tags = dirpath + "/../"
-
 fw = open(log_files, "w")
-
 count = 0
 tags = {'html'}
 clean_tags = {'u','a','h','table','tr','b','t','title','i','p','meta','fimg','ti','td','z','img','sec','hr','st','em','sup','zz','sub','style','zs','h4','kp','h3','hi','font','tbody','sc','br',}
-
 '''
 style
 img
@@ -52,7 +47,6 @@ sec
 t
 em
 '''
-
 tag_files_html = {}
 tag_files_txt = {}
 for tag in clean_tags:
@@ -62,7 +56,6 @@ for tag in clean_tags:
 	out = dirpath_for_tags+"/tags-txt/"+tag+".txt"
 	w = open(out, "w")
 	tag_files_txt[tag] = w
-
 print(src_dir)
 for root, dirs, files in os.walk(src_dir):
 	if len(dirs)==0:
@@ -92,9 +85,7 @@ for root, dirs, files in os.walk(src_dir):
 					pass
 	else:
 		fw.write(root+" contains " +str(len(dirs))+" directories and " +str(len(files))+" files.\n")
-
 for tag in tags:
 	fw.write("\'"+tag+"\',")
-
 print("Total number of files: "+str(count))
 print("Finished!")

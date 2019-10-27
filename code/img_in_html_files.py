@@ -2,19 +2,14 @@ import os, sys
 # -*- coding: utf-8 -*-
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
-
 src_dir = sys.argv[1] if len(sys.argv) >= 2 else '../html'
-
 dirpath = os.getcwd()
 log_files = dirpath+"/result.txt"
 log_imgs = dirpath+"/imgs.txt"
 imgs_dir = "images"
-
 fw = open(log_files, "w")
 fw_img_log = open(log_imgs, "w")
-
 zhibei_fowang = 'https://www.zhibeifw.com'
-
 count = 0
 images_done = []
 print(src_dir)
@@ -56,6 +51,5 @@ for root, dirs, files in os.walk(src_dir):
 				fw_img_log.write(image['alt']+"\n")
 	else:
 		fw.write(root+" contains " +str(len(dirs))+" directories and " +str(len(files))+" files.\n")
-
 print("Total number of files: "+str(count))
 print("Finished!")
