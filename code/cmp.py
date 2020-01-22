@@ -62,7 +62,7 @@ def diff(ofile, cfile, odir, cdir, diff_dir):
     with open(diff_dir+os.sep+'diff-'+cfile,'w') as f_new:
         f_new.write(q.replace(old_str,new_str))
 
-def cmp_dirs(current_dir,original_dir,diff_root_dir):
+def cmp_dirs(current_dir,original_dir,diff_root_dir,fw_log):
     current_files = []
     original_files = []
     
@@ -82,8 +82,6 @@ def cmp_dirs(current_dir,original_dir,diff_root_dir):
             if not file.startswith('.'):
                 original_files.append(file)
 
-    fw = open(log_file, "w")
-
     for cfile in current_files:
         sim = most_similar_file(current_dir+os.sep+cfile, original_dir, original_files)
         if not sim['file']:
@@ -91,7 +89,7 @@ def cmp_dirs(current_dir,original_dir,diff_root_dir):
         diff(sim['file'],cfile, original_dir, current_dir, diff_dir)
         log = cfile+': '+str(sim)
         print(log)
-        fw.write(log+"\n")
+        fw_log.write(log+"\n")
 
 
 # entry of the program
@@ -105,10 +103,12 @@ for root, dirs, files in os.walk(original_root_dir):
     dir_pairs.append(dir_pair)
 
 # print(cmp_dirs)
+
+fw = open(log_file, "w")
 count = 0
 total = len(dir_pairs)
 for pair in dir_pairs:
     count += 1
     print('comparing progress '+str(count)+'/'+str(total))
-    cmp_dirs(pair['current'],pair['original'],diff_root_dir)
+    cmp_dirs(pair['current'],pair['original'],diff_root_dir,fw)
 
